@@ -3,7 +3,7 @@ These are my notes from assignment 2
 >To fill in the gaps, read through the HTML Dog beginner HTML tutorial, the HTML Dog beginner CSS tutorial and the HTML Dog intermediate CSS tutorial. They should go relatively quickly since you’ve seen much of it before but you’ll find a fair bit of new information as well.
 ## Table of Contents
 * [HTML Dog Beginner HTML Tutorial](#html-dog-beginner-html-tutorial)
-  * [Tags, Attributes, and Elements](#tags-,-attributes-,-and-elements)
+  * [Tags, Attributes, and Elements](#tags-attributes-and-elements)
   * [Page Titles](#page-titles)
   * [Paragraphs](#paragraphs)
   * [Headings](#headings)
