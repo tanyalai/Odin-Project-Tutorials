@@ -7,6 +7,9 @@ These are my notes from assignment 2
   * [Page Titles](#page-titles)
   * [Paragraphs](#paragraphs)
   * [Headings](#headings)
+  * [Lists](#lists)
+  * [Links](#links)
+  * [Images](#images)
 * [HTML Dog Beginner CSS Tutorial](#html-dog-beginner-css-tutorial)
 * [HTML Dog Intermediate CSS Tutorial](#html-dog-intermediate-css-tutorial)
 ## HTML Dog Beginner HTML Tutorial
@@ -66,6 +69,57 @@ Remember to include **.html** at the end of HTML files.
 ### Headings
 * six levels of heading tags, strongest to least strong: h1, h2, h3, h4, h5, h6.
 * best practice to use the h1 tag only once, signifying the main heading of the page.
+---
+### Lists
+* three types of lists: unordered, ordered, definition (discussed later)
+* sequential use ordered, preceded by numbers
+* non-sequential use unordered, preceded by actual bullets
+* **ol** for ordered lists, **ul** for unordered lists
+* **li** for each list item
+* you can put lists inside other lists!
+---
+### Links
+* HT in HTML stand for hypertext, a system of linked hypertext
+* **a** is an *anchor* tag, used to define link. In addition to this, the destination of link must be added
+```HTML
+<p><a href="http://www.htmldog.com">HTML Dog</a></p>
+```
+* destination defined in **href** attribute. It can either be absolute or relative
+* ex. to link to another file in the same directory, it could be \<a href="other.html"\>Other HTML\</a\>
+* to send a user to another part of the same page they are on, use an **id** attribute to any tag
+```HTML
+<h2 id="about">About Me</h2>
+<!-- The above is the set up. Then link to that section by: -->
+<a href="#about">Go to About Me</a>
+```
+---
+### Images
+```HTML5
+<img src="http://www.htmldog.com/badgel.gif" width="120" height="90" alt="HTML Dog">
+```
+* **src** tells browser where to find the image. Can either be absolute or relative (ex. src="images/image.jpg")
+* **width** and **height** self explanatory. Necessary or else the browser will calculate image size as it loads, leading to *jank* images.
+* **alt** is the alternative description
+* **JPEG** typically used for photographs, **GIFS** used for solid colors (ex. icons, logos) or small animations, **PNG** versatile images w/ more complex designs (note: not fully supported by older browsers)
+---
+### Tables
+* **table** defines the table, **tr** defines table row, **td** defines a data cell.
+```HTML5
+<table>
+  <tr>
+    <td>Apple</td>
+    <td>Orange</td>
+  </tr>
+  <tr>
+    <td>Pear</td>
+    <td>Grape</td>
+  </tr>
+</table>
+```
+---
+### Forms
+
+
 
 
 ## HTML Dog Beginner CSS Tutorial
