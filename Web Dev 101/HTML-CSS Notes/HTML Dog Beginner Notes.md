@@ -1,19 +1,16 @@
-# HTML and CSS Basics Notes from HTML Dog
-These are my notes from assignment 2
->To fill in the gaps, read through the HTML Dog beginner HTML tutorial, the HTML Dog beginner CSS tutorial and the HTML Dog intermediate CSS tutorial. They should go relatively quickly since you’ve seen much of it before but you’ll find a fair bit of new information as well.
+# HTML Dog Beginner HTML Tutorial
+These are my notes from assignment 2, part 1
+>To fill in the gaps, read through the **HTML Dog beginner HTML tutorial**, the HTML Dog beginner CSS tutorial and the HTML Dog intermediate CSS tutorial. They should go relatively quickly since you’ve seen much of it before but you’ll find a fair bit of new information as well.
 ## Table of Contents
-* [HTML Dog Beginner HTML Tutorial](#html-dog-beginner-html-tutorial)
-  * [Tags, Attributes, and Elements](#tags-attributes-and-elements)
-  * [Page Titles](#page-titles)
-  * [Paragraphs](#paragraphs)
-  * [Headings](#headings)
-  * [Lists](#lists)
-  * [Links](#links)
-  * [Images](#images)
-  * [Tables](#tables)
-  * [Forms](#forms)
-* [HTML Dog Beginner CSS Tutorial](#html-dog-beginner-css-tutorial)
-* [HTML Dog Intermediate CSS Tutorial](#html-dog-intermediate-css-tutorial)
+* [Tags, Attributes, and Elements](#tags-attributes-and-elements)
+* [Page Titles](#page-titles)
+* [Paragraphs](#paragraphs)
+* [Headings](#headings)
+* [Lists](#lists)
+* [Links](#links)
+* [Images](#images)
+* [Tables](#tables)
+* [Forms](#forms)
 ## HTML Dog Beginner HTML Tutorial
 Remember to include **.html** at the end of HTML files.
 ### Tags, Attributes, and Elements
@@ -160,6 +157,4 @@ Remember to include **.html** at the end of HTML files.
 #### Names
 * give the form fields names so they can be handled by a form-handling script
 * ex. \<input type="text" name="spongetext\>"
-## HTML Dog Beginner CSS Tutorial
 
-## HTML Dog Intermediate CSS Tutorial
