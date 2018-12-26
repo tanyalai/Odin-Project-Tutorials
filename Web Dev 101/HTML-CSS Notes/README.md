@@ -10,6 +10,8 @@ These are my notes from assignment 2
   * [Lists](#lists)
   * [Links](#links)
   * [Images](#images)
+  * [Tables](#tables)
+  * [Forms](#forms)
 * [HTML Dog Beginner CSS Tutorial](#html-dog-beginner-css-tutorial)
 * [HTML Dog Intermediate CSS Tutorial](#html-dog-intermediate-css-tutorial)
 ## HTML Dog Beginner HTML Tutorial
@@ -94,7 +96,7 @@ Remember to include **.html** at the end of HTML files.
 ```
 ---
 ### Images
-```HTML5
+```HTML
 <img src="http://www.htmldog.com/badgel.gif" width="120" height="90" alt="HTML Dog">
 ```
 * **src** tells browser where to find the image. Can either be absolute or relative (ex. src="images/image.jpg")
@@ -104,7 +106,7 @@ Remember to include **.html** at the end of HTML files.
 ---
 ### Tables
 * **table** defines the table, **tr** defines table row, **td** defines a data cell.
-```HTML5
+```HTML
 <table>
   <tr>
     <td>Apple</td>
@@ -118,10 +120,46 @@ Remember to include **.html** at the end of HTML files.
 ```
 ---
 ### Forms
-
-
-
-
+* can be used as interface for web app. Not especially helpful on their own
+* basic form tags are: form, input, textarea, select, and option
+#### form
+* **form** defines the general form
+* often coupled with an **action** attribute to tell where the form contents will be sent to (ex. in a form for user to submit info)
+* **method** attribute tells the form how data is going to be sent
+* **get** (default), latches form info onto a web address
+  * used for shorter, *non-sensitive* info
+* **post** either **get** or this. *Invisibly* sends the form information
+  * used for longer, more secure (ex. contact forms)
+```HTML
+<form action="processingscript.php" method="post">...
+</form>
+```
+#### input
+* **input** has many guises, cornerstone. A few examples:
+  * \<input type="text"\> (or just \<input\>) is default. Can also have value to set initial text in textbox
+  * type="password", similar to text but entries typed will be hidden
+  * type="checkbox", can be toggled on and off by user. Can have *checked* attribute to make initial state "on"
+  * type="radio", the stereotypically MCQ type. Can also have checked attribute
+  * type="submit", submits the form. Can set value to be what will appear on the submit button.
+#### textarea
+* A large area for user to freely enter text. Can define the number of rows and cols.
+```HTML
+<textarea rows="5" cols="20">Any words here are the initial value of the text area</textarea>
+```
+#### select
+* works with option tag to make **drop-down** select boxes
+```HTML
+<select>
+  <option selected>Mozarella</option>
+  <option>Burrata</option>
+</select>
+```
+* if you have the second option with \<option value="hello"\>, if it is selected, hello will be sent instead of Burrata.
+* if the first option were selected, Mozarella would be sent.
+* **selected** attribute makes the item pre-selected
+#### Names
+* give the form fields names so they can be handled by a form-handling script
+* ex. \<input type="text" name="spongetext\>"
 ## HTML Dog Beginner CSS Tutorial
 
 ## HTML Dog Intermediate CSS Tutorial
