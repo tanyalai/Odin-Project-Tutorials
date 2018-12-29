@@ -10,7 +10,12 @@ body {
 /* This is a comment, by the way */
 
 p {
-    line-height: 21px;
+    font: 14px/1.5 "Times New Roman", times, serif;
+    padding: 30px 10px;
+    border: 1px black solid;
+    border-width: 1px 5px 5px 1px;
+    border-color: red green blue yellow;
+    margin: 10px 50px;
 }
 
 h1 {
@@ -51,6 +56,21 @@ img {
 a {
     text-decoration: none;
 }
+
+a:active {
+    color: red;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue;
+    background-color: yellow;
+}
+
+input:focus, textarea:focus {
+    background: #eee;
+}
+
 
 strong {
     font-style: italic;
