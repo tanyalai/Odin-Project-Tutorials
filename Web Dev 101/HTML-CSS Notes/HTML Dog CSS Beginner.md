@@ -2,7 +2,12 @@
 These are my notes from assignment 2, part 2
 >To fill in the gaps, read through the HTML Dog beginner HTML tutorial, **the HTML Dog beginner CSS tutorial** and the HTML Dog intermediate CSS tutorial. They should go relatively quickly since you’ve seen much of it before but you’ll find a fair bit of new information as well.
 ## Table of Contents
-
+* [Applying CSS](#applying-css)
+* [Selectors, Properties, and Values](#selectors-properties-and-values)
+* [Colors](#colors)
+* [Text](#text)
+* [Margins and Padding](#margins-and-padding)
+* [Borders](#borders)
 ## HTML Dog Beginner CSS Tutorial
 * Cascading Styles Sheet, presentation
 ### Applying CSS
@@ -117,3 +122,10 @@ font-family: arial, helvetica, serif;
 * there is a -top, -right, -bottom, -left for both margin and padding.
 #### The Box Model
 ![the box model](https://internetingishard.com/html-and-css/css-box-model/css-box-model-73a525.png)
+---
+### Borders
+* part of the box model. Can be applied to most HTML elements within the body
+* **border-style**, possible values: **solid**, **dotted**, **dashed**, **double**, **groove**, **ridge**, **inset**, and **outset**
+* **border-width** sets the width of the border, using pixel value.
+  * additional properties for **border-top-width**, **border-right-width**, **border-bottom-width**, and **border-left-width**
+* **border-color**, self-explanatory
