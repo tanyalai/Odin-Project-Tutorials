@@ -155,3 +155,35 @@ body {
   * **repeat-x**, repeat on x-axis
   * **no-repeat**, one instance
 * **background-position**, top, center, bottom, left, right, a length, a percentage, or any **sensible** combination (etc. top right)
+---
+### Specificity
+* two or more conflicting CSS rules on same element? The more **specific** one wins
+* if same specificity, the **last** one will take precedence
+* but that isn't often the case. Conflicts are more common amongst **nested selectors**
+* **the more specific a selector, the more preference it will be given** when it comes to conflicting styles
+#### Calculating Specificity
+* give every **ID selector (#selector)** a value of **100**, **class selector (.class)** a value of 10, and every **HTML selector** a value of 1
+  * ex. div p has specificity value of 2 (2 HTML selectors)
+---
+### Display
+* visual representation of most HTML elements are essentially display types
+* most fundamental types: inline, block, none
+* manipulated with the **display** property, with the values stated above
+#### Inline
+* follows the flow of a line (ex. anchor links and emphasis are inline)
+```CSS
+li{ display:inline; }
+```
+#### Block
+* makes a box standalone, fitting the entire width of the containing box with a line break before and after the main element
+* display: inline-block will make box inline but give formatting flexibility of the block
+#### None
+* can "turn off" the display of elements in certain situation
+* display:none and visibility; hidden aren't the same
+  * display:none takes the elements box completely out of play
+  * visibility: hidden keeps the box in place without visually representing the contents
+#### Tables
+* can mimic tr and td elements w/ table-row, and table-cell property values (CSS)
+* display offers a table-column, -row-group, column-group, -header-group, -footer-group, and -caption values
+* inline-table sets table without line breaks before and after
+* run-in makes a box either in-line or block (dependends on the parent display)
