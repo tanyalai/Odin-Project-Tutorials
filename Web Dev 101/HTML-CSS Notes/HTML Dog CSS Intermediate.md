@@ -6,6 +6,11 @@ These are my notes from assignment 2, part 3
 * [Grouping and Nesting](#grouping-and-nesting)
 * [Pseudo Classes](#pseudo-classes)
 * [Shorthand Properties](#shorthand-properties)
+* [Background Images](#background-images)
+* [Specificity](#specificity)
+* [Display](#display)
+* [Pseudo Elements](#pseudo-elements)
+* [Page Layout](#page-layout)
 ## HTML Dog Intermediate CSS Tutorial
 
 ### Class and ID Selectors
@@ -186,4 +191,66 @@ li{ display:inline; }
 * can mimic tr and td elements w/ table-row, and table-cell property values (CSS)
 * display offers a table-column, -row-group, column-group, -header-group, -footer-group, and -caption values
 * inline-table sets table without line breaks before and after
-* run-in makes a box either in-line or block (dependends on the parent display)
+#### Other Display Types
+* **run-in** makes a box either in-line or block (depends on the parent display)
+* **list-item** shows the box in the way an **li** element is expected to be displayed
+  * should be nested within an **ul** or **ol** element for this to work
+---
+### Pseudo Elements
+* stick to pseudo classes, takes form of:
+```CSS
+selector: pseudoelement{
+  property: value;
+}
+```
+#### First Letters and First Lines
+* **first-letter** self explanatory
+* **first-line** to top-most displayed line in a box
+so ex.
+```CSS
+p:first-line{
+  font-weight: bold;
+}
+p:first-letter{
+  font-size: 30px;
+}
+```
+* **NOTE**, CSS3 specs suggest p::first-line (with 2 colons) to differentiate them from pseudo classes. Backwards compatibility will be valid either way
+#### Before and After Content
+* **before** and **after** are used in conjunction with the **content** property to place content on **either side** of a box w/out touching HTML
+  * use this sparingly
+* values of **content** property: **open-quote**, **close-quote**, any string in quotation marks, or any image (using **url(imagename)**)
+* **content** effectively creates another box to work with
+```CSS
+blockquote:before {
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}
+
+li:before {
+    content: "POW! ";
+}
+
+p:before {
+    content: url(images/jam.jpg);
+}
+```
+---
+### Page Layout
+* take chunks and place them **absolutely** or **relative** to another chunk
+#### Positioning
+* **position** property defines the relation of the box
+  * **static** is the default value. Renders in normal order, as apparent by HTML
+  * **relative** is similar to static but can be offset by top, right, bottom, and left
+  * **absolute** pulls box out of normal flow. Can be placed anywhere on the page, regardless, and follow top, right, bottom, and left instructions
+  * **fixed** is like absolute, but will make the box position fixed in reference to the browser window, so the box stays in the exact place on screen, even when page is scrolled
+    * so fixed can be kind of like a menu bar that always stays at the top of the screen with you, even as you scroll
+  * downside to absolutely positioned boxes: because they live in a world of their own, can't accurately determine end location. Safer bet is to **float** the chunks, rather than absolutely positioning
+#### Floating
+* floating something will shift it to the **right** or **left** of a line, surrounding content flows around it
+* **float:left** or **float:right**
+* then, if you don't want the next box to wrap, apply the clear property, specify:
+  * **clear:left**, **clear:right**, or **clear:both**
