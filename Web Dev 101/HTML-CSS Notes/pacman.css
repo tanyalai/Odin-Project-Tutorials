@@ -1,0 +1,44 @@
+div {margin: o; padding: 0;}
+div div {
+  background: #FDFF00;
+  position: relative;
+}
+.pacman{
+	height: 404px;
+  width: 334px;
+	margin: 100px auto;
+}
+.tophead{
+	width: 220px;
+  height: 125px;
+	top: 32px;
+	border-radius: 110px 110px 0 0;
+}
+.eye{
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 10px;
+  top: 55px;
+  left: 140px;
+  position: absolute;
+
+}
+.bottomhead{
+	width: 220px;
+  height: 110px;
+	top: 32px;
+	border-radius: 110px 110px 0 0;
+  transform: rotate(180deg);
+}
+.mouth{
+  width: 107px;
+  height: 5px;
+  top: 110px;
+  background: #000
+}
+
+.bottomhead:hover {
+  transform: rotate(210deg) translate(29px, -4px);
+
+}
