@@ -1,0 +1,84 @@
+body{
+  font-family: arial, sans-serif;
+}
+.center {
+  text-align: -webkit-center;
+}
+div {
+  display: block;
+}
+
+#formbox {
+  width: 484px;
+  height: 44px;
+  display: flex;
+  backgound: #fff;
+  z-index: 3;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+  border-radius: 2px;
+  text-align: center;
+}
+#spacer {
+  width: 437px;
+  height: 5px;
+}
+#forms {
+  flex: 1;
+  display: flex;
+  padding-right: 24px;
+  padding-top: 5px;
+  padding-left: 16px;
+}
+.logo{
+  padding-top: 150px;
+}
+.bar{
+  width: 420px;
+  height: 34px;
+  text-indent: 0px;
+  font-size: 12pt;
+  z-index: 10;
+  border: none;
+}
+#voice {
+  padding: 5px 8px;
+  flex: 1 0 auto;
+  cursor: pointer;
+}
+#buttons {
+  width: 487px;
+  height: 58px;
+  padding-top: 18px;
+  margin: auto;
+}
+#first, #second{
+  display: inline-block;
+}
+.search {
+  background: #f2f2f2;
+  color: #757575;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  width: 125.75px;
+  height: 36px;
+  margin: 11px 4px;
+  padding: 0 16px;
+}
+.lucky {
+  background: #f2f2f2;
+  color: #757575;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  width: 142.58px;
+  height: 36px;
+  margin: 11px 4px;
+  padding: 0 16px;
+}
