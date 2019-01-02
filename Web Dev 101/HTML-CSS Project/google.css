@@ -31,7 +31,7 @@ div {
   padding-left: 16px;
 }
 .logo{
-  padding-top: 150px;
+  padding-top: 109px;
 }
 .bar{
   width: 420px;
@@ -84,14 +84,18 @@ div {
   padding: 0 16px;
 }
 ul{
-  padding: 0;
+  padding: 0 0 0 10px;
+  height: 30px;
 }
-li{
-  display: inline;
+#navbar li{
+  display: inline-block;
   color: #000;
   opacity: 0.75;
   font-size: 13px;
-  padding: 0 0 0 15px;
+  padding: 0.5em 0 0.5em 15px;
+}
+#navbar .rights{
+  float: right;
 }
 a{
   text-decoration: none;
