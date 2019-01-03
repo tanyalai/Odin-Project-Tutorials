@@ -83,19 +83,85 @@ div {
   margin: 11px 4px;
   padding: 0 16px;
 }
-ul{
-  padding: 0 0 0 10px;
+#navbar {
+  padding: 0 10px;
   height: 30px;
 }
-#navbar li{
+.fbar {
+  border-top: 1px solid #e4e4e4;
+  margin: 5px 0 0 0;
+  height: 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#bottom {
+  bottom: 0;
+  padding: 0 10px;
+  height: 40px;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+.left {
   display: inline-block;
   color: #000;
   opacity: 0.75;
   font-size: 13px;
   padding: 0.5em 0 0.5em 15px;
 }
-#navbar .rights{
+.fleft {
+  display: inline-block;
+  color: #5f6368;
+  font-size: 13px;
+  padding: 1em 0 1em 27px;
+}
+.nrights{
   float: right;
+  display: inline-block;
+  color: #000;
+  opacity: 0.75;
+  font-size: 13px;
+  padding: 0.5em 0 0.5em 15px;
+}
+.frights{
+  float: right;
+  display: inline-block;
+  color: #5f6368;
+  font-size: 13px;
+  padding: 1em 0 1em 27px;
+}
+.lastrights{
+  float: right;
+  display: inline-block;
+  color: #5f6368;
+  font-size: 13px;
+  padding: 1em 27px 1em 27px;
+}
+#navbar .rights {
+  float: right;
+  display: inline-block;
+  padding: 0 0 0 15px;
+}
+#navbar .rights .bell {
+  float: right;
+  display: inline-block;
+  color: #000;
+  opacity: 0.75;
+  font-size: 13px;
+  padding: 3px 0 0 0;
+}
+#navbar .rights .squares {
+  float: right;
+  display: inline-block;
+  color: #000;
+  opacity: 0.75;
+  font-size: 13px;
+}
+.circle {
+  border-radius: 50%;
+}
+.profile {
+  padding: 0 15px 0 0;
 }
 a{
   text-decoration: none;
