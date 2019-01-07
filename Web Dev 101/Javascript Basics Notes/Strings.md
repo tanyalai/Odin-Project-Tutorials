@@ -20,6 +20,7 @@ button.onclick = function() {
 * Number(string) converts the string to a number type
 * myNum.toString() convert a number to a string
 ### Useful String Methods
+[Exhaustive List of String Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 * **string.length**, length of string
 * Javascript is zero-indexing, get a certain character by stringName[x], last character by stringName[stringName.length-1]
 * **string.indexOf(x)** finds the first index of the first occurrence of the substring
@@ -54,7 +55,7 @@ var res = str.substr(7, 6); //res = Banana
 * **.search(x)** is equivalent to indexOf in terms of what they return but they are slightly different
   * search CANNOT take a second start position argument
   * indexOf cannot take powerful search values (regular expressions?)
-* **.concat()** joins two or more strings (concatenation), same as + operator
+* **.concat(x,y)** or **str.concat(x)** joins two or more strings (concatenation), same as + operator
 * **string.trim()** removes white space from both sides of a string
 * **.charAt(x)** returns character at specified index
   * similar to [], but [] is more unpredictable:    
